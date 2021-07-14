@@ -1,9 +1,9 @@
-*Fonts*
+**Fonts**
 - Helvetica Neue (Replace with Roboto)
 - Monteserrat => Nav Items
 - Open sans => Services Heading
 
-*Colors*
+**Colors**
 * --accessiblity : #337ab7;
 * --nav-black: #a1a1a1;
 * -- message-blue: #52a7fe;
