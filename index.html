@@ -9,12 +9,310 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous"/>
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-  <h1>Hello World</h1>
+  <!-- Accessibility Section -->
+  <div id="accessibility">
+    <div id="screen-access">Screen Reader Access</div>
+    <div id="skip-menu">Skip to Menu</div>
+    <div id="skip-content">Skip to Content</div>
+    <div id="site-map">Site Map</div>
+    <div id="font-controls">
+      <div id="font-decrease">A-</div>
+      <div id="font-original">A</div>
+      <div id="font-increase">A+</div>
+    </div>
+    <div id="social-media">
+      <div id="facebook">
+        <img src="images/facebook.png" alt="Facebook">
+      </div>
+      <div id="instagram">
+        <img src="images/insta.png" alt="Instagram">
+      </div>
+      <div id="twitter">
+        <img src="images/twitter.png" alt="Twitter">
+      </div>
+    </div>
+    <div id="change-mode">
+      <div id="dark-mode">A</div>
+      <div id="light-mode">A</div>
+    </div>
+  </div>
   
+  <!-- Navigation Section -->
+  <nav id="navbar">
+    <div id="logo">
+      <img src="images/police_logo.png" alt="Police Logo">
+    </div>
+    <div id="navItems">
+      <div id="home">Home</div>
+      <div id="about-us">About Us</div>
+      <div id="martyrs">Martyrs</div>
+      <div id="awards">Awards</div>
+      <div id="fir">Fir</div>
+      <div id="press-release">Press Release</div>
+      <div id="gallery">Gallery</div>
+      <div id="recruitment">Recruitment</div>
+      <div id="latest-news">Latest News</div>
+      <div id="contact-us">Contact Us</div>
+    </div>
+  </nav>
+
+  <!-- Gallery Carousel Section -->
+  <section id="carousel">
+    <img src="images/banner1.jpg" alt="Police Gallery Banner 1">
+    <div id="carousel-controls">
+      <div id="to-left-image">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div id="to-right-image">
+        <i class="fas fa-chevron-right fa-5x"></i>
+      </div>
+    </div>
+    <div id="circles">
+      <div class="circle active-circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </section>
+
+  <!-- DGP Message Section -->
+  <section id="dgp-message">
+    <div id="dgp-photo">
+      <img src="images/dgp_photo.jpg" alt="Photo of DGP">
+    </div>
+    <div id="message">
+      <div id="message-title">Message From The Dgp</div>
+      <p>
+        In the recent past, the Police Department faced two main challenges. One was the Economic Blockade on the two National Highways (NH-37 and NH-2),which  started at midnight of 31st October 2016, and the other was the State Assembly Elections 2017,for which polling was done in two phases-on the 4th and  8th of March.
+        During the long economic blockade, under strict monitoring by hon’ble Manipur High Court, the police and security forces were mandated to bring in every week at least 17 convoys of loaded trucks filled with petroleum products, cooking gas, FCI rice, medicine and other essential commodities. With the help and cooperation of CRPF, Army and AR, the State Police were able to achieve this target and ensure free flow of essential commodities in spite of ambush by NSCN(IM) on few occasions.                      
+        Besides the economic blockade, the UNC had picketed all government offices, which posed a big challenge to preparations and conduct of peaceful and fair elections. Doubts were even raised whether we would be able to conduct Assembly Elections at all. Under strict, day to day monitoring by ECI, security arrangements for training of poll personnel, filling of nominations, campaigning, etc. were done. We gave assurance to the ECI that we challenges of conducting elections and we have proved that we could do it.
+        I am happy to say that in spite of most difficult and trying situations, we were able to conduct one of the most incident free elections in the state. This is possible due to the sincere efforts and hard work put in by all concerned.
+        I would like to put on record my sincere appreciation to all officers and men of Army, AR, CRPF, BSF and the State Police for all the efforts contributed by the Economic Blockade and State Assembly Elections 2017. I look forward to continued cooperation and synergy in the months to come.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div id="women">
+      <div class="services-logo">
+        <img src="images/women_service.png" alt="Women">
+      </div>
+      <div class="services-title">Women</div>
+      <div class="services-sub-title">Helpline</div>
+      <div class="services-number">Toll Free No. 181</div>
+    </div>
+    <div id="police">
+      <div class="services-logo">
+        <img src="images/police_service.png" alt="Police">
+      </div>
+      <div class="services-title">Police</div>
+      <div class="services-sub-title">Helpline</div>
+      <div class="services-number">Toll Free No. 100</div>
+    </div>
+    <div id="ambulance">
+      <div class="services-logo">
+        <img src="images/ambulance_service.png" alt="Ambulance">
+      </div>
+      <div class="services-title">Ambulance</div>
+      <div class="services-sub-title">Helpline</div>
+      <div class="services-number">Toll Free No. 102</div>
+    </div>
+    <div id="fire-dept">
+      <div class="services-logo">
+        <img src="images/fire_service.jpg" alt="Fire Department">
+      </div>
+      <div class="services-title">Fire Dept.</div>
+      <div class="services-sub-title">Helpline</div>
+      <div class="services-number">Toll Free No. 101</div>
+    </div>
+    <div id="child">
+      <div class="services-logo">
+        <img src="images/child_service.png" alt="Child">
+      </div>
+      <div class="services-title">Child</div>
+      <div class="services-sub-title">Helpline</div>
+      <div class="services-number">Toll Free No. 1098</div>
+    </div>
+    <div id="cctns">
+      <div class="services-logo">
+        <img src="images/cctns_service.png" alt="CCTNS">
+      </div>
+      <div class="services-title">Cctns</div>
+      <div class="services-sub-title">Citizen Services</div>
+      <div class="services-links">
+        <a href="http://www.mnpcitizenportal.gov.in">www.mnpcitizenportal.gov.in</a>
+        <a href="http://www.digitalpolice.gov.in">www.digitalpolice.gov.in</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section id="links">
+    <div id="units">
+      <div class="link-title">Units</div>
+      <ul id="link-items">
+        <li class="link-item">Civil Police</li>
+        <li class="link-item">Manipur Rifles</li>
+        <li class="link-item">India Reserve Battalion</li>
+        <li class="link-item">CID</li>
+        <li class="link-item">Manipur Police Telecom Organisation</li>
+        <li class="link-item">Manipur Police Training College</li>
+        <li class="link-item">Traffic Control Police</li>
+        <li class="link-item">Narcotic & Affairs of Border</li>
+        <li class="link-item">Forensic Science Laboratory</li>
+        <li class="link-item">DG Control Room</li>
+        <li class="link-item">Central Motor Transport Workshop</li>
+        <li class="link-item">Home Guards</li>
+        <li class="link-item">Women Police</li>
+        <li class="link-item">Village Defence Force</li>
+        <li class="link-item">Special Investigation Team</li>
+      </ul>
+    </div>
+    <div id="important-links">
+      <div class="link-title">Important Links</div>
+      <ul id="link-items">
+        <li class="link-item">Official Website of Manipur</li>
+        <li class="link-item">CCTNS Citizen Services</li>
+        <li class="link-item">MHA, New Delhi</li>
+        <li class="link-item">Indian Police in Service of the Nation</li>
+        <li class="link-item">Manipur Public Service Commission</li>
+        <li class="link-item">GOI Directory</li>
+        <li class="link-item">Accountant General, Manipur</li>
+        <li class="link-item">Guideline for Government Website</li>
+        <li class="link-item">Govt. of Manipur Web Directory</li>
+        <li class="link-item">National Cybercrime Reporting Portal</li>
+      </ul>
+    </div>
+    <div id="latest-news">
+      <div class="link-title">Latest News</div>
+      <ul id="link-items">
+      </li class="link-item">Live Webcast of Police Commemoration Day Function, National Police Memorial, New Delhi, 2020.</li>
+      </li class="link-item">Circular to enforce “Prevention to Cruelty to Animals Act, 1960”</li>
+      </li class="link-item">Online compose song and record music video competition notice from Zonal Director, Narcotic Control Bureau, Guwahati Zonal Unit, Guwahati.</li>
+      </li class="link-item">Achievements of Manipur Police Sports Club</li>
+      </li class="link-item">e-Tender</li>
+      </li class="link-item">Notification on “The Manipur Victim Compensation Scheme, 2019″</li>
+      </li class="link-item">Delhi Police Recruitment result</li>
+      </li class="link-item">Notification of “Forensic Science Internship Scheme”</li>
+      </li class="link-item">Indian Police Journal on “Police Martyrdom”</li>
+      </li class="link-item">Recruitment</li>
+      </li class="link-item">... Read more</li>
+      </ul>
+    </div>
+    <div id="good-work-done">
+      <div class="link-title">Good Work Done</div>
+      <ul id="link-items">
+        <li class="link-item">CID(Technical)</li>
+        <li class="link-item">Imphal East</li>
+        <li class="link-item">Imphal West</li>
+        <li class="link-item">Thoubal</li>
+        <li class="link-item">Churachandpur</li>
+        <li class="link-item">Senapati</li>
+        <li class="link-item">8th India Reserve Battallion (CDO)</li>
+        <li class="link-item">8th Bn Manipur Rifles</li>
+        <li class="link-item">Narcotics and Affairs of Border</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sitemap Section -->
+  <section id="sitemap">
+    <div id="contact">
+      <div id="contact-title">Get In Touch!</div>
+      <div id="address">
+        <p>Manipur Police</p>
+        <p>Babupura near New Secretariat</p>
+        <p>Pin-795001 Manipur.</p>
+      </div>
+      <div id="numbers">
+        <p>100 (Toll Free) / 91 385 2440 100</p>
+        <p>Fax: 91 385 2451 100</p>
+        <p>Email: mpccimail@gmail.com</p>
+      </div>
+    </div>
+    <div id="quick-links">
+      <div id="quick-links-title">Quick Links</div>
+      <p>FIR</p>
+      <p>Organization Structure</p>
+      <p>Press Release</p>
+      <div id="ad">
+        <img src="images/ad.jpeg" alt="Government Advertisement">
+      </div>
+    </div>
+    <div id="visitors">
+      <div id="visitors-title">Visitor Counter</div>
+      <div id="counter">
+        <!-- 343283 -->
+        <img src="images/counter_3.gif" alt="Counter 3">
+        <img src="images/counter_4.gif" alt="Counter 4">
+        <img src="images/counter_3.gif" alt="Counter 3">
+        <img src="images/counter_2.gif" alt="Counter 2">
+        <img src="images/counter_8.gif" alt="Counter_8">
+        <img src="images/counter_3.gif" alt="Counter 3">
+      </div>
+      <div id="users-today">
+        <img src="images/users_today.png" alt="Users Today">
+        Users Today: 371</div>
+      <div id="users-yesterday">
+        <img src="images/users_yesterday.png" alt="Users Yesterday">
+        Users Yesterday: 1021</div>
+      <div id="this-month">
+        <img src="images/users_month.png" alt="Users This Month">
+        This Month: 8502
+      </div>
+      <div id="this-year">
+        <img src="images/users_year.png" alt="Users This Year">
+        This Year: 119964
+      </div>
+      <div id="total-users">
+        <img src="images/users_total.png" alt="Total Users">
+        Total Users: 343283
+      </div>
+      <div id="total-views">
+        <img src="images/views_total.png" alt="Total Views">
+        Total Views: 2030758
+      </div>
+      <div id="whos-online">
+        <img src="images/whos_online.png" alt="Who's Online">
+        Who's Online: 14
+      </div>
+      <div id="your-id">
+        Your IP Address: 47.29.57.53
+      </div>
+    </div>
+    <div id="gallery">
+      <div id="gallery-title">Gallery</div>
+      <div id="gallery-grid">
+        <div class="gallery-grid-item">
+          <img src="images/gallery1.JPG" alt="Gallery One">
+        </div>
+        <div class="gallery-grid-item">
+          <img src="images/gallery2.JPG" alt="Gallery Two">
+        </div>
+        <div class="gallery-grid-item">
+          <img src="images/gallery3.JPG" alt="Gallery Three">
+        </div>
+        <div class="gallery-grid-item">
+          <img src="images/gallery4.JPG" alt="Gallery Four">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    &copy; Manipur Police 2017 All right reserved. Website Design and Developed by <a href="#">Globizs</a>
+  </footer>
 </body>
 </html>
