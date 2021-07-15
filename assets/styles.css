@@ -142,3 +142,28 @@ body, html {
 .active-circle {
   background-color: var(--circle-gray);
 }
+
+#dgp-message {
+  background-color: var(--message-blue);
+  margin-top: -0.3rem;
+  padding: 2rem 6rem;
+}
+
+#message {
+  margin-left: 10rem;
+  text-align: justify;
+}
+
+#message-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 1px #efefefb3;
+}
+
+#message p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
