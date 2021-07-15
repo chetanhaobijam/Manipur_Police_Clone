@@ -1,5 +1,5 @@
 :root {
-  --accessiblity: #337ab7;
+  --accessibility: #337ab7;
   --nav-black: #a1a1a1;
   --message-blue: #52a7fe;
   --message-text: #333;
@@ -24,3 +24,46 @@ body, html {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.mr-3 {
+  margin-right: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+#accessibility {
+  justify-content: center;
+  color: var(--accessibility);
+  margin-top: 0.5rem;
+}
+
+#accessibility div {
+  cursor: pointer;
+}
+
+#font-controls {
+  color: var(--message-text);
+}
+
+.mode {
+  background-color: var(--message-text);
+  color: #fff;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+#light-mode {
+  background-color: #cecece;
+  color: var(--message-text);
+}
