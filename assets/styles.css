@@ -205,3 +205,37 @@ body, html {
   text-transform: uppercase;
   text-decoration: underline;
 }
+
+#links {
+  display: grid;
+  padding: 2rem 6rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.link-title {
+  background-color: var(--units-heading);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0 0.3rem 1rem;
+  color: #fff;
+  border-bottom: 3px solid var(--units-border);
+  margin-bottom: 0.7rem;
+}
+
+.link-items {
+  list-style: none;
+}
+
+.link-item {
+  color: var(--units-text);
+  font-family: 'Open Sans', Arial, sans-serif;
+  border: 1px solid #cecece;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.more {
+  color: var(--services-text);
+}
