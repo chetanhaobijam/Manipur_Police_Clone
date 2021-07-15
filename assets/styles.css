@@ -2,6 +2,7 @@
   --accessibility: #337ab7;
   --nav-black: #a1a1a1;
   --message-blue: #52a7fe;
+  --circle-gray: #cecece;
   --message-text: #333;
   --services-heading: #313131;
   --services-text: #ff0033;
@@ -68,7 +69,7 @@ body, html {
 }
 
 #light-mode {
-  background-color: #cecece;
+  background-color: var(--circle-gray);
   color: var(--message-text);
 }
 
@@ -88,3 +89,56 @@ body, html {
   cursor: pointer;
 }
 
+#carousel {
+  position: relative;
+  width: 100%;
+}
+
+#carousel img {
+  width: 100%;
+  height: auto;
+}
+
+#carousel-controls {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#carousel-controls i {
+  opacity: 0.3;
+  transition: all 0.5s linear;
+}
+
+#carousel-controls i:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+#carousel-controls div {
+  cursor: pointer;
+}
+
+#circles {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 5%;
+}
+
+.circle {
+  background-color: var(--message-text);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.active-circle {
+  background-color: var(--circle-gray);
+}
