@@ -24,6 +24,10 @@ body, html {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+.ml-2 {
+  margin-left: 1rem;
+}
+
 .mr-1 {
   margin-right: 0.5rem;
 }
@@ -67,3 +71,20 @@ body, html {
   background-color: #cecece;
   color: var(--message-text);
 }
+
+#navbar {
+  margin: 1rem 0 1rem 9rem;
+}
+
+#nav-items {
+  align-items: center;
+  text-transform: uppercase;
+  font: 700 0.8rem 'Montserrat', Arial, sans-serif;
+  margin-left: 3rem;
+}
+
+#nav-items div {
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
+
