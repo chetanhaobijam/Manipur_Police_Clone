@@ -76,6 +76,10 @@ body, html {
   margin: 1rem 0 1rem 9rem;
 }
 
+#menu {
+  display: none;
+}
+
 #nav-items {
   align-items: center;
   text-transform: uppercase;
@@ -326,4 +330,48 @@ body, html {
 #footer a:hover {
   text-decoration: underline;
   color: #458ad0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1340px) {
+  #navbar {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 1215px) {
+  #nav-items {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar {
+    flex-direction: column;
+    margin: 0;
+  }
+  #menu {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--message-blue);
+    justify-content: space-between;
+    color: #fff;
+  }
+  #nav-items {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #accessibility {
+    margin: 1rem 0 1rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #other-controls {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
