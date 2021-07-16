@@ -238,3 +238,28 @@ body, html {
 .more {
   color: var(--services-text);
 }
+
+#sitemap {
+  padding: 2rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--sitemap-black);
+  color: var(--sitemap-text);
+}
+
+#gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.gallery-grid-item {
+  width: 140px;
+  height: auto;
+  border: 2px solid var(--sitemap-text);
+}
+
+.gallery-grid-item img {
+  width: 100%;
+  height: auto;
+}
