@@ -129,8 +129,8 @@ body, html {
 #services {
   padding: 4rem 6rem;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
 }
 
 .services-title {
@@ -150,6 +150,8 @@ body, html {
 
 .services-links {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-links a {
@@ -357,6 +359,10 @@ body, html {
   }
   #dgp-message {
     padding: 2rem;
+  }
+  #services {
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
