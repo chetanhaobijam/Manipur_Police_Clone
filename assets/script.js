@@ -7,5 +7,4 @@ const navItems = document.querySelector("#nav-items");
 menu.addEventListener("click", () => {
   navItems.classList.toggle("show");
   menu.classList.toggle("dark-menu")
-  console.log(`Toggle Activated.`);
 })
