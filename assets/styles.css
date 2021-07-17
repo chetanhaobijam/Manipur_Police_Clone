@@ -303,6 +303,19 @@ body, html {
   }
 }
 
+@media (max-width: 992px) {
+  #dgp-message {
+    flex-direction: column;
+  }
+  #dgp-photo {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  #message {
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   #accessibility {
     margin: 1rem 0 1rem 1rem;
@@ -341,6 +354,9 @@ body, html {
     width: 100%;
     padding: 1rem;
     margin: 0;
+  }
+  #dgp-message {
+    padding: 2rem;
   }
 }
 
