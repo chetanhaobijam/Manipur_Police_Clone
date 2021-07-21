@@ -339,32 +339,30 @@
       <div id="gallery-grid">
         <div class="gallery-grid-item">
           <img src="images/gallery1.JPG" alt="Gallery One"
-          onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          onclick="openModal()">
         </div>
         <div class="gallery-grid-item">
-          <img src="images/gallery2.JPG" alt="Gallery Two" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <img src="images/gallery2.JPG" alt="Gallery Two" onclick="openModal()">
         </div>
         <div class="gallery-grid-item">
-          <img src="images/gallery3.JPG" alt="Gallery Three" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          <img src="images/gallery3.JPG" alt="Gallery Three" onclick="openModal()">
         </div>
         <div class="gallery-grid-item">
-          <img src="images/gallery4.JPG" alt="Gallery Four" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          <img src="images/gallery4.JPG" alt="Gallery Four" onclick="openModal()">
         </div>
       </div>
       <!-- Modal -->
-      <div class="modal">
-        <div class="closeBtn">
+      <div class="my-modal">
+        <div class="close-btn" onclick="closeModal()">
           <i class="fas fa-times fa-2x"></i>
         </div>
-        <div class="controls">
-          <div class="prev" onclick="plusSlides(-1)">
+        <div class="modal-container">
+          <div class="prev modal-controls" onclick="plusSlides(-1)">
             <i class="fas fa-chevron-left"></i>
           </div>
-          <div class="next" onclick="plusSlides(1)">
+          <div class="next modal-controls" onclick="plusSlides(1)">
             <i class="fas fa-chevron-right"></i>
           </div>
-        </div>
-        <div class="modal-content">
           <div class="slides">
             <img src="images/gallery1.JPG" alt="Gallery1">
           </div>
