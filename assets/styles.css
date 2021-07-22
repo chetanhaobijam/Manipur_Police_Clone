@@ -418,6 +418,22 @@ body, html {
     padding: 1rem;
     margin: 0;
   }
+  .owl-dots {
+    bottom: 0.5em;
+  }
+  .owl-dots span {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .owl-prev, .owl-next {
+    font-size: 3rem !important;
+  }
+  .owl-prev {
+    left: 0.1em;
+  }
+  .owl-next {
+    right: 0.1em;
+  }
   #dgp-message {
     padding: 2rem;
   }
