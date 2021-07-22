@@ -150,6 +150,10 @@ body, html {
   right: 0.2em;
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+}
+
 /* Styles for DGP Message Section */
 #dgp-message {
   background-color: var(--message-blue);
@@ -538,4 +542,26 @@ body, html {
 
 .slides img {
   width: 100%;
+}
+
+/* Scroll To Top Button */
+.scrollToTop {
+  position: fixed;
+  background-color: var(--units-heading);
+  padding: 0.5rem 1rem;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all ease 1s;
+  display: none;
+}
+
+.scrollToTop:hover {
+  opacity: 1.0;
+  transform: scale(1.1);
 }

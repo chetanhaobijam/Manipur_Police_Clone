@@ -49,3 +49,26 @@ $(document).ready(function(){
     autoplayHoverPause: true
   });
 });
+
+// Scroll To Top Button Function
+const scrollToTop = document.querySelector(".scrollToTop");
+const rootElement = document.documentElement;
+
+const handleScroll = () => {
+  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if((rootElement.scrollTop / scrollTotal) > 0.20) {
+    scrollToTop.classList.add("show");
+  } else {
+    scrollToTop.classList.remove("show");
+  }
+}
+
+const scrollTop = () => {
+  rootElement.scrollTo ({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+document.addEventListener("scroll", handleScroll);
+scrollToTop.addEventListener("click", scrollTop);
