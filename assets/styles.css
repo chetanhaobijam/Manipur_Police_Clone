@@ -116,6 +116,11 @@ body, html {
   text-align: center;
   position: absolute;
   bottom: 1em;
+  opacity: 0.5;
+}
+
+.owl-dots:hover {
+  opacity: 1;
 }
 
 .owl-dots span {
@@ -141,18 +146,26 @@ body, html {
   color: #fff !important;
   font-size: 5rem !important;
   font-weight: 900 !important;
+  height: 100%;
+  width: 5rem;
+  margin: 0 !important;
+  opacity: 0.5;
+  transition: all ease 1s;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  opacity: 1;
+  background-color: #333333a3 !important;
 }
 
 .owl-prev {
-  left: 0.2em;
-}
-.owl-next {
-  right: 0.2em;
+  left: 0;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background: none;
+.owl-next {
+  right: 0;
 }
+
 
 /* Styles for DGP Message Section */
 #dgp-message {
@@ -432,12 +445,6 @@ body, html {
   .owl-prev, .owl-next {
     font-size: 3rem !important;
   }
-  .owl-prev {
-    left: 0.1em;
-  }
-  .owl-next {
-    right: 0.1em;
-  }
   #dgp-message {
     padding: 2rem;
   }
@@ -461,6 +468,9 @@ body, html {
   }
 }
 @media (max-width: 450px) {
+  .owl-prev, owl-next {
+    width: 3rem;
+  }
   #footer {
     font-size: 0.8rem;
   }
