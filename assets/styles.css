@@ -1,5 +1,6 @@
 /* CSS Custom Properties */
 :root {
+  /* Light Variations */
   --accessibility: #337ab7;
   --message-blue: #52a7fe;
   --circle-gray: #cecece;
@@ -12,6 +13,12 @@
   --sitemap-black: #2d2d2d;
   --sitemap-text: #c4c4c4;
   --footer-black: #1e1e1e;
+
+  /* Dark Variations */
+  --dark-body: #181a1b;
+  --dark-accessibility: #69a6d5;
+  --dark-dgp-message: #014d9b;
+  --dark-link-item: #b2aca2;
 }
 
 * {
@@ -20,7 +27,7 @@
   box-sizing: border-box;
 }
 
-body, html {
+html {
   font-size: 15px;
   font-family: 'Roboto', Arial, sans-serif;
 }
@@ -47,17 +54,17 @@ body, html {
 }
 
 /* Styles for Accessibility Section */
-#accessibility {
+.accessibility {
   justify-content: center;
   color: var(--accessibility);
   margin-top: 0.5rem;
 }
 
-#accessibility div {
+.accessibility div {
   cursor: pointer;
 }
 
-#font-controls {
+.font-controls {
   color: var(--message-text);
 }
 
@@ -78,6 +85,10 @@ body, html {
 /* Styles for Navbar Section */
 #navbar {
   margin: 1rem 0 1rem 9rem;
+}
+
+#logo {
+  background-color: #fff;
 }
 
 #menu {
@@ -117,6 +128,7 @@ body, html {
   position: absolute;
   bottom: 1em;
   opacity: 0.5;
+  transition: opacity ease 1s;
 }
 
 .owl-dots:hover {
@@ -168,7 +180,7 @@ body, html {
 
 
 /* Styles for DGP Message Section */
-#dgp-message {
+.dgp-message {
   background-color: var(--message-blue);
   margin-top: -0.7rem;
   padding: 2rem 6rem;
@@ -179,7 +191,7 @@ body, html {
   text-align: justify;
 }
 
-#message-title {
+.message-title {
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -384,7 +396,7 @@ body, html {
 }
 
 @media (max-width: 992px) {
-  #dgp-message {
+  .dgp-message {
     flex-direction: column;
   }
   #dgp-photo {
@@ -397,7 +409,7 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  #accessibility {
+  .accessibility {
     margin: 1rem 0 1rem 1rem;
     flex-direction: column;
     gap: 0.5rem;
@@ -422,6 +434,7 @@ body, html {
     right: 1em;
     bottom: 2em;
     cursor: pointer;
+    color: #333;
   }
   #nav-items {
     display: none;
@@ -445,7 +458,7 @@ body, html {
   .owl-prev, .owl-next {
     font-size: 3rem !important;
   }
-  #dgp-message {
+  .dgp-message {
     padding: 2rem;
   }
   #services {
@@ -483,7 +496,7 @@ body, html {
 
 .dark-menu {
   background-color: var(--message-text);
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Modal Lighthouse */
@@ -574,4 +587,30 @@ body, html {
 .scrollToTop:hover {
   opacity: 1.0;
   transform: scale(1.1);
+}
+
+/* Dark Mode Classes */
+.dark-body {
+  background-color: var(--dark-body);
+  color: #fff;
+}
+
+.dark-accessibility {
+  color: var(--dark-accessibility);
+}
+
+.white-text {
+  color: #fff;
+}
+
+.dark-text-shadow {
+  text-shadow: 0 3px 1px #000000b3;
+}
+
+.dark-dgp-message {
+  background-color: var(--dark-dgp-message);
+}
+
+.dark-link-item {
+  color: var(--dark-link-item);
 }
